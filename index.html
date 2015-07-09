@@ -53,18 +53,30 @@
 <strong>vtk</strong> 3D visualisation with VTK</li>
 </ul>
 
-<p>Gosl is developed in/for Debian systems at the moment. It depends on a number of packages that can be installed as follows:</p>
-
-<pre><code>sudo apt-get install libopenmpi-dev libhwloc-dev libsuitesparse-dev libmumps-dev 
-sudo apt-get install gfortran libvtk5-dev python-scipy python-matplotlib dvipng
-</code></pre>
-
 <h3>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h3>
 
-<p>After installing Go (golang), type (don't forget the three dots):</p>
+<p>Gosl is developed in/for Debian systems at the moment. It depends on a number of packages that can be installed as follows:</p>
 
-<pre><code>go get github.com/cpmech/gosl/...
+<pre><code>
+sudo apt-get install libopenmpi-dev libhwloc-dev libsuitesparse-dev libmumps-dev 
+sudo apt-get install gfortran libvtk5-dev python-scipy python-matplotlib dvipng
+</code></pre>
+
+<p>Gosl depends also on some Python scripts; therefore:</>
+
+<pre><code>
+gosl/scripts must be in PYTHONPATH
+</code></pre>
+
+<p>After installing Go (golang), type the following commands:</p>
+
+<pre><code>
+mkdir -p $GOPATH/src/github.com/cpmech
+cd $GOPATH/src/github.com/cpmech
+git clone https://github.com/cpmech/gosl.git
+cd gosl
+./all.bash
 </code></pre>
 
 <h3>
