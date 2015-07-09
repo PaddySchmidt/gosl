@@ -58,21 +58,18 @@
 
 <p>Gosl is developed in/for Debian systems at the moment. It depends on a number of packages that can be installed as follows:</p>
 
-<pre><code>
-sudo apt-get install libopenmpi-dev libhwloc-dev libsuitesparse-dev libmumps-dev 
+<pre><code>sudo apt-get install libopenmpi-dev libhwloc-dev libsuitesparse-dev libmumps-dev 
 sudo apt-get install gfortran libvtk5-dev python-scipy python-matplotlib dvipng
 </code></pre>
 
 <p>Gosl depends also on some Python scripts; therefore:</>
 
-<pre><code>
-gosl/scripts must be in PYTHONPATH
+<pre><code>gosl/scripts must be in PYTHONPATH
 </code></pre>
 
 <p>After installing Go (golang), type the following commands:</p>
 
-<pre><code>
-mkdir -p $GOPATH/src/github.com/cpmech
+<pre><code>mkdir -p $GOPATH/src/github.com/cpmech
 cd $GOPATH/src/github.com/cpmech
 git clone https://github.com/cpmech/gosl.git
 cd gosl
